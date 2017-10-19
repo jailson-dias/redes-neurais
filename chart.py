@@ -1,6 +1,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import colors
 
 
 # Have colormaps separated into categories:
@@ -12,14 +13,18 @@ cmaps = [
             'tab10', 'tab20', 'tab20b', 'tab20c']),
          ]
 
-
+cmap = colors.ListedColormap(['red', 'green', 'yellow', 'black', 'blue'])
 # fig, axes = plt.subplots(nrows=50)
 
 nrows = max(len(cmap_list) for cmap_category, cmap_list in cmaps)
 gradient = np.linspace(0, 1, 256)
 gradient = np.vstack((gradient, gradient))
 
-gradient = np.array([(0,3), (1,2),(0,1)])
+a = [(5,), (4,),(1,)]
+for i in range(0, 20):
+    a += a
+
+gradient = np.array(a)
 
 print (gradient)
 
@@ -30,7 +35,7 @@ def plot_color_gradients(cmap_category, cmap_list, nrows):
 
     for ax, name in zip(axes, cmap_list):
         
-        ax.imshow(gradient, cmap=plt.get_cmap(name), clim=(0,0.1))
+        ax.imshow(gradient, cmap=cmap)
         # pos = list(ax.get_position().bounds)
         # x_text = pos[0] - 0.01
         # y_text = pos[1] + pos[3]/2.
