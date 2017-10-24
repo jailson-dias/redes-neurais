@@ -28,6 +28,10 @@ def ler_linhas(planilha, linhas, colunas):
 		yield saida
 
 def separar_grupos(planilha, grupo0, grupo1):
+    """
+    ler a planilha com os dados e separa eles em grupo0 e grupo1
+    """
+    print ("Separando os dados em dois grupos")
     for linha in ler_linhas(planilha, 11183, 7):
         if linha[-1] == 0:
             grupo0.append(linha)
@@ -37,6 +41,12 @@ def separar_grupos(planilha, grupo0, grupo1):
 
 def eliminar_contradicao(grupo0, grupo1):
 
+    """
+    pega os dados dos grupos 0 e 1 e remove dos dois grupos os dados que são iguais
+    mas estão nos dois grupos
+    """
+
+    print ("Eliminando contradições na base de dados")
     contradicao = 0
     l0 = len(grupo0) - 1
     while l0 >= 0:
@@ -54,7 +64,12 @@ def eliminar_contradicao(grupo0, grupo1):
     print("Contradições:", contradicao)
 
 def dividir_em_grupos(grupo0, grupo1, quant_grupos = 10):
-    
+    """
+    pega os dados do grupo0 e do grupo1 e separa ele em 10 grupos, sendo que em cada
+    grupo vai ter a mesma quantidade de casos do grupo0 e do grupo1
+    """
+
+    print ("dividindo a base em " + str(quant_grupos) + " grupos com quantidade igual de casos de cada teste")
     def split_list(grupo, quant):
         grupos = []
         incremento = int(len(grupo)/quant)
@@ -97,139 +112,54 @@ def insere_planilha(planilha, grupo):
 			planilha.cell(row = linha + 1, column = col + 1, value = grupo[linha][col])
        
 
-
-cmap = colors.ListedColormap(['blue', 'red'])
-
-xlsx = load_workbook("Entrada.xlsx")
-
-# """
-fig, axes = plt.subplots(nrows=1)
-axes.set_title('colormaps', fontsize=14)
-axes.axis([-0.5, 6.5, 0, 12000])
-
-label = ["", "a","b", "c", "d", "e", "f", "g"]
-# x = np.array([0,1,2,3,4,5,6])
-frame1 = plt.gca()
-frame1.axes.get_xaxis().set_ticklabels(label)
-# plt.xticks(x, label)
-
-# axes([0.08, 0.08, 0.94-0.08, 0.94-0.08])
-# fig = plt.figure()
-# fig.subplots_adjust(left=0.05, bottom=0.05, right=0.98, top=0.98)
-# axes=axes.reshape(1,len(axes))
-# axes.fill(9,3)
-
-# plt.gca().set_position([0, 0, 1, 1]) # ponto inicial e final do grafico
-
-# data = random.random((5,5))
-# a = [(0,0,1,0,0,0,1), (1,0,1,0,0,0,1), (1,0,0,0,0,0,1), (1,0,1,0,1,0,0),(0,0,1,0,1,0,1)]
-# for i in range(0,8):
-#     a += a
-
-grupo0 = []
-grupo1 = []
-
-separar_grupos(xlsx["Original"], grupo0, grupo1)
-
-# print (len(grupo0), len(grupo1))
-eliminar_contradicao(grupo0, grupo1)
-# print (len(grupo0), len(grupo1))
-grupos = dividir_em_grupos(grupo0, grupo1)
-
-insere_planilha(xlsx.create_sheet(title = "Grupo 0"), grupo0)
-insere_planilha(xlsx.create_sheet(title = "Grupo 1"), grupo1)
-
-for i in range(len(grupos)):
-	'''Embaralha e insere cada grupo em uma planilha propria'''
-	shuffle(grupos[i])
-	insere_planilha(xlsx.create_sheet(title = "Divisao " + str(i)), grupos[i])
-
-xlsx.save("Saida.xlsx")
-
-# """
-"""
-dados = []
-
-verdadeiro = 0
-
-vermelhos = 0
-
-for linha in grupo0 + grupo1:
-    # print (linha)
-    l = []
-    if linha[-1] == 1:
-        verdadeiro += 1
-    for celula in linha[:-1]:
-        if celula == 0 or celula == None:
-            l.append(1)
-            vermelhos += 1
-        else:
+def plotGraph(dados, title):
+    print ("Desenhando o grafico da base de dados")
+    cmap = colors.ListedColormap(['blue', 'red'])
+    fig, axes = plt.subplots(nrows=1)
+    axes.set_title(title, fontsize=14)
+    # axes.axis([-0.5, 6.5, 0, 12000])
+    # label = ["", "a","b", "c", "d", "e", "f", "g"]
+    # frame1 = plt.gca()
+    # frame1.axes.get_xaxis().set_ticklabels(label)
+    dadosPlot = []
+    for linha in dados:
+        l = []
+        for celula in linha[:-1]:
+            if celula == 0 or celula == None:
+                l.append(1)
+            else:
+                l.append(0)
+        if linha[-1] != 0 and linha[-1] != None:
             l.append(0)
-    if linha[-1] != 0 and linha[-1] != None:
-        l.append(0)
-    else:
-        l.append(1)
-    dados.append(tuple(l))
-img = plt.imshow(dados, cmap=cmap, interpolation='nearest', aspect='auto')
-print (verdadeiro, vermelhos)
-# img.set_cmap('hot')
-# plt.axis('off')
-# plt.savefig("test.png", bbox_inches='tight')
-plt.show()
+        else:
+            l.append(1)
+        dadosPlot.append(tuple(l))
+    img = plt.imshow(dadosPlot, cmap=cmap, interpolation='nearest', aspect='auto')
+    plt.show()
 
-# """
-"""
-
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib import colors
+if __name__ == "__main__":
 
 
-# Have colormaps separated into categories:
-# http://matplotlib.org/examples/color/colormaps_reference.html
-cmaps = [
-         ('Qualitative', [
-            'Pastel1', 'Pastel2', 'Paired', 'Accent',
-            'Dark2', 'Set1', 'Set2', 'Set3',
-            'tab10', 'tab20', 'tab20b', 'tab20c']),
-         ]
+    xlsx = load_workbook("Entrada.xlsx")
 
-cmap = colors.ListedColormap(['red', 'green', 'yellow', 'black', 'blue'])
-# fig, axes = plt.subplots(nrows=50)
+    grupo0 = []
+    grupo1 = []
 
-nrows = max(len(cmap_list) for cmap_category, cmap_list in cmaps)
-gradient = np.linspace(0, 1, 256)
-gradient = np.vstack((gradient, gradient))
+    separar_grupos(xlsx["Original"], grupo0, grupo1)
 
-a = [(5,4,1)]
-# for i in range(0, 20):
-#     a += a
+    # print (len(grupo0), len(grupo1))
+    eliminar_contradicao(grupo0, grupo1)
+    # print (len(grupo0), len(grupo1))
+    grupos = dividir_em_grupos(grupo0, grupo1)
 
-gradient = np.array(a)
+    insere_planilha(xlsx.create_sheet(title = "Grupo 0"), grupo0)
+    insere_planilha(xlsx.create_sheet(title = "Grupo 1"), grupo1)
 
-print (gradient)
+    for i in range(len(grupos)):
+        '''Embaralha e insere cada grupo em uma planilha propria'''
+        shuffle(grupos[i])
+        insere_planilha(xlsx.create_sheet(title = "Divisao " + str(i)), grupos[i])
 
-def plot_color_gradients(cmap_category, cmap_list, nrows):
-    fig, axes = plt.subplots(ncols=2)
-    # fig.subplots_adjust(top=0.95, bottom=0.01, left=0.2, right=0.99)
-    axes[0].set_title(cmap_category + ' colormaps', fontsize=14)
+    xlsx.save("Saida.xlsx")
 
-    for ax, name in zip(axes, cmap_list):
-        
-        ax.imshow(gradient, cmap=cmap, interpolation='nearest')
-        # pos = list(ax.get_position().bounds)
-        # x_text = pos[0] - 0.01
-        # y_text = pos[1] + pos[3]/2.
-        # fig.text(x_text, y_text, name, va='center', ha='right', fontsize=10)
-
-    # Turn off *all* ticks & spines, not just the ones with colormaps.
-    for ax in axes:
-        ax.set_axis_off()
-
-
-for cmap_category, cmap_list in cmaps:
-    plot_color_gradients(cmap_category, cmap_list, nrows)
-
-plt.show()
-
-"""
+    plotGraph(grupo0 + grupo1, "DADOS")
