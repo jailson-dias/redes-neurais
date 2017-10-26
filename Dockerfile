@@ -11,7 +11,7 @@ WORKDIR /redes-neurais/
 # COPY services/ /usr/src/services
 # more volumes
 
-ADD . /redes-neurais/
+# ADD . /redes-neurais/
 
 # RUN npm install --production --silent
 
