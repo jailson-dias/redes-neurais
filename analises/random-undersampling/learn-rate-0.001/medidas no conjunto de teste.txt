@@ -1,0 +1,65 @@
+(1,2)
+    Matriz de confusão
+    [[1703  195]
+     [   8   56]]
+
+    Train Loss:       0.0938
+    Validation Loss:  0.1174
+    Accuracy:         0.8965
+    MSE:              0.1035
+    AUROC:            0.9252
+
+(1,3)
+    Matriz de confusão
+    [[1734  164]
+     [   8   56]]
+
+    Train Loss:       0.0596
+    Validation Loss:  0.0806
+    Accuracy:         0.9123
+    MSE:              0.0877
+    AUROC:            0.9228
+
+(1,4)
+    Matriz de confusão
+    [[1683  215]
+     [   9   55]]
+
+    Train Loss:       0.0615
+    Validation Loss:  0.0878
+    Accuracy:         0.8858
+    MSE:              0.1142
+    AUROC:            0.9326
+
+(1,5)
+Matriz de confusão
+    [[1710  188]
+     [   9   55]]
+
+    Train Loss:       0.0582
+    Validation Loss:  0.0767
+    Accuracy:         0.8996
+    MSE:              0.1004
+    AUROC:            0.9288
+
+(2,3,5)
+Matriz de confusão
+    [[1617  281]
+     [   5   59]]
+
+    Train Loss:       0.0514
+    Validation Loss:  0.0566
+    Accuracy:         0.8542
+    MSE:              0.1458
+    AUROC:            0.9442
+
+(2,5,3)
+    Matriz de confusão
+    [[1646  252]
+     [   8   56]]
+
+    Train Loss:       0.0433
+    Validation Loss:  0.0506
+    Accuracy:         0.8675
+    MSE:              0.1325
+    AUROC:            0.9001
