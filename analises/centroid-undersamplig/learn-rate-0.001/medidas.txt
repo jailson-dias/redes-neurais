@@ -55,3 +55,14 @@
     MSE:              0.1019
     AUROC:            0.9401
     
+    
+(2,5,3)
+    Matriz de confusão
+    [[1656  242]
+     [   8   56]]
+
+    Train Loss:       0.0667
+    Validation Loss:  0.0936
+    Accuracy:         0.8726
+    MSE:              0.1274
+    AUROC:            0.9291
