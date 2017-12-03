@@ -1,0 +1,77 @@
+(1,2)
+    Matriz de confusão
+    [[1660  238]
+     [   6   58]]
+
+    Train Loss:       0.0808
+    Validation Loss:  0.1121
+    Accuracy:         0.8756
+    MSE:              0.1244
+    AUROC:            0.9348
+
+
+(1,3)
+    Matriz de confusão
+    [[1724  174]
+     [   7   57]]
+
+    Train Loss:       0.0639
+    Validation Loss:  0.0829
+    Accuracy:         0.9077
+    MSE:              0.0923
+    AUROC:            0.9407
+
+
+(1,4)
+    Matriz de confusão
+    [[1709  189]
+     [   8   56]]
+
+    Train Loss:       0.0770
+    Validation Loss:  0.1116
+    Accuracy:         0.8996
+    MSE:              0.1004
+    AUROC:            0.9144
+
+
+(1,5)
+    Matriz de confusão
+    [[1763  135]
+     [  11   53]]
+
+    Train Loss:       0.0703
+    Validation Loss:  0.0968
+    Accuracy:         0.9256
+    MSE:              0.0744
+    AUROC:            0.9285
+
+
+(2,3,5)
+    Matriz de confusão
+    [[1774  124]
+     [  10   54]]
+
+    Train Loss:       0.0712
+    Validation Loss:  0.0900
+    Accuracy:         0.9317
+    MSE:              0.0683
+    AUROC:            0.8963
+
+
+(2,5,3)
+    Matriz de confusão
+    [[1665  233]
+     [   8   56]]
+
+    Train Loss:       0.0653
+    Validation Loss:  0.0826
+    Accuracy:         0.8772
+    MSE:              0.1228
+    AUROC:            0.9373
+
+
+
+
+
+
+roupas de classe média
