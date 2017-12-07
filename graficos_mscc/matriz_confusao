@@ -1,0 +1,13 @@
+Matriz de confusão
+[[1781  117]
+ [   8   56]]
+
+Train Loss:       0.0471
+Validation Loss:  0.0823
+Accuracy:         0.9363
+Recall:           0.8750
+Precision:        0.3237
+F1:               0.4726
+AUROC:            0.9526
+
+1 camada, 20 neurônios - patience: 100 - taxa de aprendizagem: 0.01
