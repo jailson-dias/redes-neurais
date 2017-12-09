@@ -1,0 +1,48 @@
+undersampling random, lr=0.001
+
+Rede = (10)
+	Matriz de confusão
+	[[1669  229]
+	 [  12   52]]
+
+	Train Loss:       0.0988
+	Validation Loss:  0.1497
+	Accuracy:         0.8772
+	MSE:              0.1228
+	AUROC:            0.9195
+
+
+Rede = (20)
+	Matriz de confusão
+	[[1782  116]
+	 [   9   55]]
+
+	Train Loss:       0.0815
+	Validation Loss:  0.1079
+	Accuracy:         0.9363
+	MSE:              0.0637
+	AUROC:            0.9506
+
+
+Rede = (10, 15)
+	Matriz de confusão
+	[[1786  112]
+	 [   9   55]]
+
+	Train Loss:       0.0821
+	Validation Loss:  0.1198
+	Accuracy:         0.9383
+	MSE:              0.0617
+	AUROC:            0.9379
+
+
+Rede = (20, 10)
+	Matriz de confusão
+	[[1719  179]
+	 [   7   57]]
+
+	Train Loss:       0.0642
+	Validation Loss:  0.0854
+	Accuracy:         0.9052
+	MSE:              0.0948
+	AUROC:            0.9542
