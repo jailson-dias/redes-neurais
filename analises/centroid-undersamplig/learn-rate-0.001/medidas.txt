@@ -187,6 +187,30 @@ Accuracy:         0.8991
 MSE:              0.1009
 AUROC:            0.9297
 
+(2,10,15) - patience 20
+
+Matriz de confusão
+[[1410  488]
+ [  15   49]]
+
+Train Loss:       0.2570
+Validation Loss:  0.3273
+Accuracy:         0.7436
+MSE:              0.2564
+AUROC:            0.7964
+
+(2,20,10) - patience 20
+
+Matriz de confusão
+[[1732  166]
+ [   7   57]]
+
+Train Loss:       0.0876
+Validation Loss:  0.1033
+Accuracy:         0.9118
+MSE:              0.0882
+AUROC:            0.9575
+
 (2,20,10) - patience 50
 
 Matriz de confusão
