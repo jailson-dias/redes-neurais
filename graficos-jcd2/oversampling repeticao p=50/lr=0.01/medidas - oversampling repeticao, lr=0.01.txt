@@ -1,0 +1,50 @@
+oversampling repeticao, lr=0.01, p=50
+
+Rede = (10)
+	Matriz de confusão
+	[[1786  112]
+	 [   7   57]]
+
+	Train Loss:       0.0610
+	Validation Loss:  0.0737
+	Accuracy:         0.9393
+	MSE:              0.0607
+	AUROC:            0.9545
+	
+	
+Rede = (20)
+	Matriz de confusão
+	[[1805   93]
+	 [   8   56]]
+
+	Train Loss:       0.0477
+	Validation Loss:  0.0759
+	Accuracy:         0.9485
+	MSE:              0.0515
+	AUROC:            0.9573
+	
+	
+Rede = (10, 15)
+	Matriz de confusão
+	[[1811   87]
+	 [   9   55]]
+
+	Train Loss:       0.0313
+	Validation Loss:  0.0729
+	Accuracy:         0.9511
+	MSE:              0.0489
+	AUROC:            0.9358
+
+
+Rede = (20, 10)
+	Matriz de confusão
+	[[1787  111]
+	 [   7   57]]
+
+	Train Loss:       0.0511
+	Validation Loss:  0.0763
+	Accuracy:         0.9399
+	MSE:              0.0601
+	AUROC:            0.9557
+
+	
