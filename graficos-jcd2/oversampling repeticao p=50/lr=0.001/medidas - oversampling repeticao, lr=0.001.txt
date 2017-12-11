@@ -1,0 +1,34 @@
+oversampling repeticao, lr=0.001, p=50
+
+Rede = (10)
+	Matriz de confusão
+	[[1774  124]
+	 [   7   57]]
+
+	Train Loss:       0.0649
+	Validation Loss:  0.0760
+	Accuracy:         0.9332
+	MSE:              0.0668
+	AUROC:            0.9542
+	
+	
+Rede = (20)
+	Matriz de confusão
+	[[1784  114]
+	 [   7   57]]
+
+	Train Loss:       0.0689
+	Validation Loss:  0.0938
+	Accuracy:         0.9383
+	MSE:              0.0617
+	AUROC:            0.9479
+	
+	
+Rede = (10, 15)
+
+
+
+Rede = (20, 10)
+
+
+	

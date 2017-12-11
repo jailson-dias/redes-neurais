@@ -1,0 +1,33 @@
+oversampling SMOTE, lr=0.001, p=50
+
+Rede = (10)
+	Matriz de confusão
+	[[1806   92]
+	 [   8   56]]
+
+	Train Loss:       0.0496
+	Validation Loss:  0.0650
+	Accuracy:         0.9490
+	MSE:              0.0510
+	AUROC:            0.9507
+	
+	
+Rede = (20)
+	Matriz de confusão
+	[[1805   93]
+	 [   7   57]]
+
+	Train Loss:       0.0596
+	Validation Loss:  0.0787
+	Accuracy:         0.9490
+	MSE:              0.0510
+	AUROC:            0.9435
+	
+	
+Rede = (10, 15)
+
+
+
+Rede = (20, 10)
+
+	
