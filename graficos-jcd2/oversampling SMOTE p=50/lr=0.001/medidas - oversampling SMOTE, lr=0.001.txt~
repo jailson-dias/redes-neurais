@@ -38,12 +38,12 @@ Rede = (10, 15)
 
 Rede = (20, 10)
 	Matriz de confusão
-	[[1806   92]
-	 [   9   55]]
+	[[1805   93]
+	 [   7   57]]
 
-	Train Loss:       0.0384
-	Validation Loss:  0.0542
-	Accuracy:         0.9485
-	MSE:              0.0515
-	AUROC:            0.9461
+	Train Loss:       0.0383
+	Validation Loss:  0.0636
+	Accuracy:         0.9490
+	MSE:              0.0510
+	AUROC:            0.9558
 	
