@@ -1,0 +1,97 @@
+
+(1,10) - patience 50
+
+Matriz de confusão
+[[1761  137]
+ [   8   56]]
+
+Train Loss:       0.0962
+Validation Loss:  0.1049
+Accuracy:         0.9261
+MSE:              0.0739
+AUROC:            0.9370
+
+(1,10) - patience 300
+
+Matriz de confusão
+[[1897    1]
+ [  64    0]]
+
+Train Loss:       0.4869
+Validation Loss:  0.4825
+Accuracy:         0.9669
+MSE:              0.0331
+AUROC:            0.3756
+
+(1,20) - patience 50
+
+Matriz de confusão
+[[1759  139]
+ [   6   58]]
+
+Train Loss:       0.0583
+Validation Loss:  0.0676
+Accuracy:         0.9261
+MSE:              0.0739
+AUROC:            0.9550
+
+(1,20) - patience 300
+
+Matriz de confusão
+[[1736  162]
+ [   8   56]]
+
+Train Loss:       0.0578
+Validation Loss:  0.0729
+Accuracy:         0.9134
+MSE:              0.0866
+AUROC:            0.9530
+
+
+(2,10,15) - patience 50
+
+Matriz de confusão
+[[1716  182]
+ [   8   56]]
+
+Train Loss:       0.0515
+Validation Loss:  0.0822
+Accuracy:         0.9032
+MSE:              0.0968
+AUROC:            0.9500
+
+(2,10,15) - patience 300
+
+Matriz de confusão
+[[1767  131]
+ [   7   57]]
+
+Train Loss:       0.0635
+Validation Loss:  0.0980
+Accuracy:         0.9297
+MSE:              0.0703
+AUROC:            0.9464
+
+(2,20,10) - patience 50
+
+Matriz de confusão
+[[1769  129]
+ [   9   55]]
+
+Train Loss:       0.0533
+Validation Loss:  0.0744
+Accuracy:         0.9297
+MSE:              0.0703
+AUROC:            0.9487
+
+(2,20,10) - patience 300
+
+Matriz de confusão
+[[1745  153]
+ [   7   57]]
+
+Train Loss:       0.0501
+Validation Loss:  0.0578
+Accuracy:         0.9185
+MSE:              0.0815
+AUROC:            0.9445

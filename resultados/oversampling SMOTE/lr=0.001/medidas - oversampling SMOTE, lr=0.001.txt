@@ -1,0 +1,105 @@
+oversampling SMOTE, lr=0.001, patience=50
+
+Rede = (10)
+	Matriz de confusão
+	[[1806   92]
+	 [   8   56]]
+
+	Train Loss:       0.0496
+	Validation Loss:  0.0650
+	Accuracy:         0.9490
+	MSE:              0.0510
+	AUROC:            0.9507
+	
+	
+Rede = (20)
+	Matriz de confusão
+	[[1805   93]
+	 [   7   57]]
+
+	Train Loss:       0.0596
+	Validation Loss:  0.0787
+	Accuracy:         0.9490
+	MSE:              0.0510
+	AUROC:            0.9435
+	
+	
+Rede = (10, 15)
+	Matriz de confusão
+	[[1790  108]
+	 [   7   57]]
+
+	Train Loss:       0.0376
+	Validation Loss:  0.0547
+	Accuracy:         0.9414
+	MSE:              0.0586
+	AUROC:            0.9544
+
+
+Rede = (20, 10)
+	Matriz de confusão
+	[[1805   93]
+	 [   7   57]]
+
+	Train Loss:       0.0383
+	Validation Loss:  0.0636
+	Accuracy:         0.9490
+	MSE:              0.0510
+	AUROC: 		  0.9558
+
+
+
+
+
+
+
+
+
+
+
+
+oversampling SMOTE, lr=0.001
+
+Rede = (10) - patience = 300
+	Matriz de confusão
+	[[1781  117]
+	 [   7   57]]
+
+	Train Loss:       0.0489
+	Validation Loss:  0.0580
+	Accuracy:         0.9368
+	MSE:              0.0632
+	AUROC:            0.9399
+
+Rede = (20) - patience = 300
+	Matriz de confusão
+	[[1810   88]
+	 [   9   55]]
+
+	Train Loss:       0.0415
+	Validation Loss:  0.0568
+	Accuracy:         0.9506
+	MSE:              0.0494
+	AUROC:            0.9466
+
+Rede = (10,15) - patience = 300
+	Matriz de confusão
+	[[1794  104]
+	 [   8   56]]
+
+	Train Loss:       0.0405
+	Validation Loss:  0.0573
+	Accuracy:         0.9429
+	MSE:              0.0571
+	AUROC:            0.9595
+
+Rede = (20,10) - patience = 300
+	Matriz de confusão
+	[[1805   93]
+	 [   8   56]]
+
+	Train Loss:       0.0569
+	Validation Loss:  0.0782
+	Accuracy:         0.9485
+	MSE:              0.0515
+	AUROC:            0.9359
