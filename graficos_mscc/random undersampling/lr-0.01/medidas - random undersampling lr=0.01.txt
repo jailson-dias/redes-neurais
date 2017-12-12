@@ -103,3 +103,39 @@ Rede(2,10,15) - patience = 500
 	Accuracy:         0.9052
 	MSE:              0.0948
 	AUROC:            0.9510
+
+Rede(2,20,10) - patience = 50
+
+	Matriz de confusão
+	[[1734  164]
+	 [   6   58]]
+
+	Train Loss:       0.0648
+	Validation Loss:  0.0956
+	Accuracy:         0.9134
+	MSE:              0.0866
+	AUROC:            0.9424
+
+Rede(2,20,10) - patience = 300
+
+	Matriz de confusão
+	[[1732  166]
+	 [   7   57]]
+
+	Train Loss:       0.0462
+	Validation Loss:  0.0739
+	Accuracy:         0.9118
+	MSE:              0.0882
+	AUROC:            0.9436
+
+Rede(2,20,10) - patience = 500
+
+	Matriz de confusão
+	[[1721  177]
+	 [   6   58]]
+
+	Train Loss:       0.0654
+	Validation Loss:  0.0923
+	Accuracy:         0.9067
+	MSE:              0.0933
+	AUROC:            0.9393
