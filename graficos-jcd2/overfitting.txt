@@ -50,3 +50,25 @@ oversampling SMOTE lr=0.01 rede=(10, 15) tanh
 	Accuracy:         0.9465
 	MSE:              0.0535
 	AUROC:            0.9518
+	
+	
+oversampling SMOTE lr=0.01 rede=(10, 15) sigmoid
+	Matriz de confusão
+	[[1785  113]
+	 [   9   55]]
+
+	Train Loss:       0.0529
+	Validation Loss:  0.0644
+	Accuracy:         0.9378
+	MSE:              0.0622
+	AUROC:            0.9549
+
+	
+oversampling SMOTE SVM
+	Matriz de confusão
+	[[1804   94]
+	 [   8   56]]
+
+	Accuracy:         0.9480
+	MSE:              0.0520
+	AUROC:            0.9127
