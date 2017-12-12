@@ -166,14 +166,14 @@ AUROC:            0.9530
 (2,10,15) - patience 50
 
 Matriz de confusão
-[[1733  165]
- [   6   58]]
+[[1716  182]
+ [   8   56]]
 
-Train Loss:       0.0939
-Validation Loss:  0.1301
-Accuracy:         0.9128
-MSE:              0.0872
-AUROC:            0.9599
+Train Loss:       0.0515
+Validation Loss:  0.0822
+Accuracy:         0.9032
+MSE:              0.0968
+AUROC:            0.9500
 
 (2,10,15) - patience 100
 

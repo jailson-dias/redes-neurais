@@ -71,14 +71,14 @@ Rede(1,20) - patience = 500
 Rede(2,10,15) - patience = 50
 
 	Matriz de confusão
-	[[1741  157]
-	 [   6   58]]
+	[[1757  141]
+	 [  10   54]]
 
-	Train Loss:       0.0668
-	Validation Loss:  0.0944
-	Accuracy:         0.9169
-	MSE:              0.0831
-	AUROC:            0.9568
+	Train Loss:       0.0684
+	Validation Loss:  0.1022
+	Accuracy:         0.9230
+	MSE:              0.0770
+	AUROC:            0.9334
 
 Rede(2,10,15) - patience = 300
 
